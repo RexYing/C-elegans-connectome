@@ -1,0 +1,95 @@
+\begin{thebibliography}{10}
+
+\bibitem{chalfie_neural_1985}
+M~Chalfie, J~E Sulston, J~G White, E~Southgate, J~N Thomson, and S~Brenner.
+\newblock The neural circuit for touch sensitivity in caenorhabditis elegans.
+\newblock {\em The Journal of neuroscience: the official journal of the Society
+  for Neuroscience}, 5(4):956--964, April 1985.
+\newblock {PMID:} 3981252.
+
+\bibitem{gabel_neural_2007}
+C.~V. Gabel, H.~Gabel, D.~Pavlichin, A.~Kao, D.~A. Clark, and A.~D.~T. Samuel.
+\newblock Neural circuits mediate electrosensory behavior in caenorhabditis
+  elegans.
+\newblock {\em Journal of Neuroscience}, 27(28):7586--7596, July 2007.
+
+\bibitem{Hodgkin_quantitative_1990}
+A.~L. Hodgkin and A.~F. Huxley.
+\newblock A quantitative description of membrane current and its application to
+  conduction and excitation in nerve.
+\newblock {\em Bulletin of Mathematical Biology}, 52(1-2):25--71, January 1990.
+
+\bibitem{izquierdo_connecting_2013}
+Eduardo~J. Izquierdo and Randall~D. Beer.
+\newblock Connecting a connectome to behavior: An ensemble of neuroanatomical
+  models of c. elegans klinotaxis.
+\newblock {\em {PLoS} Computational Biology}, 9(2):e1002890, February 2013.
+
+\bibitem{jarrell_connectome_2012}
+T.~A. Jarrell, Y.~Wang, A.~E. Bloniarz, C.~A. Brittin, M.~Xu, J.~N. Thomson,
+  D.~G. Albertson, D.~H. Hall, and S.~W. Emmons.
+\newblock The connectome of a decision-making neural network.
+\newblock {\em Science}, 337(6093):437--444, July 2012.
+
+\bibitem{kleinberg_authoritative_1999}
+Jon~M. Kleinberg.
+\newblock Authoritative sources in a hyperlinked environment.
+\newblock {\em Journal of the {ACM}}, 46(5):604–632, September 1999.
+
+\bibitem{li_improvement_2002}
+Longzhuang Li, Yi~Shang, and Wei Zhang.
+\newblock Improvement of {HITS-based} algorithms on web documents.
+\newblock In {\em Proceedings of the 11th International Conference on World
+  Wide Web}, page 527–535, Honolulu, {HI}, {USA}, 2002.
+
+\bibitem{lockery_quest_2009}
+Shawn~R Lockery and Miriam~B Goodman.
+\newblock The quest for action potentials in c. elegans neurons hits a plateau.
+\newblock {\em Nature Neuroscience}, 12(4):377--378, April 2009.
+
+\bibitem{lockery_first_2009}
+Shawn~R Lockery, Miriam~B Goodman, and Serge Faumont.
+\newblock First report of action potentials in a c. elegans neuron is
+  premature.
+\newblock {\em Nature Neuroscience}, 12(4):365--366, April 2009.
+
+\bibitem{mellem_action_2008}
+Jerry~E Mellem, Penelope~J Brockie, David~M Madsen, and Andres~V Maricq.
+\newblock Action potentials contribute to neuronal signaling in c. elegans.
+\newblock {\em Nature Neuroscience}, 11(8):865--867, June 2008.
+
+\bibitem{morita_geometrical_2001}
+Satoru Morita, Ken-ichi Oshio, Yuko Osana, Yasuhiro Funabashi, Kotaro Oka, and
+  Kiyoshi Kawamura.
+\newblock Geometrical structure of the neuronal network of caenorhabditis
+  elegans.
+\newblock {\em Physica A: Statistical Mechanics and its Applications},
+  298(3-4):553--561, September 2001.
+
+\bibitem{sohn_topological_2011}
+Yunkyu Sohn, Myung-Kyu Choi, Yong-Yeol Ahn, Junho Lee, and Jaeseung Jeong.
+\newblock Topological cluster analysis reveals the systemic organization of the
+  caenorhabditis elegans connectome.
+\newblock {\em {PLoS} Computational Biology}, 7(5):e1001139, May 2011.
+
+\bibitem{varshney_structural_2011}
+Lav~R. Varshney, Beth~L. Chen, Eric Paniagua, David~H. Hall, and Dmitri~B.
+  Chklovskii.
+\newblock Structural properties of the caenorhabditis elegans neuronal network.
+\newblock {\em {PLoS} Computational Biology}, 7(2):e1001066, February 2011.
+
+\bibitem{white_structure_1986}
+J.~G. White, E.~Southgate, J.~N. Thomson, and S.~Brenner.
+\newblock The structure of the nervous system of the nematode caenorhabditis
+  elegans.
+\newblock {\em Philosophical Transactions of the Royal Society B: Biological
+  Sciences}, 314(1165):1--340, November 1986.
+
+\bibitem{xu_computer_2013}
+Meng Xu, Travis~A. Jarrell, Yi~Wang, Steven~J. Cook, David~H. Hall, and
+  Scott~W. Emmons.
+\newblock Computer assisted assembly of connectomes from electron micrographs:
+  Application to caenorhabditis elegans.
+\newblock {\em {PLoS} {ONE}}, 8(1):e54050, January 2013.
+
+\end{thebibliography}

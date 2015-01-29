@@ -1,0 +1,117 @@
+
+\section{Graph basics} 
+\label{section:graph-basics} 
+
+\subsection{definitions} 
+
+Gragh $ G = (V, E) $ where $V$ is the set of graph nodes 
+and $E$ is the set of edges that connect the nodes. 
+
+\paragraph{Incidence Matrix}
+A 0-1 matrix which has V rows and E columns. $(v,e)=1$ iff v is incident upon edge e.
+The incidence matrix $\nabla$ of a graph and adjacency matrix A of its {\em line graph} are related by:
+$$ A= {\nabla}^{T}\nabla - 2 I. $$
+
+\paragraph{Laplacian Matrix},
+also called admittance matrix or Kirchhoff matrix, of a graph $G=(V,E)$ is an undirected, unweighted graph without graph loops $(i, i)$ or multiple edges from one node
+to another. Its size is $n \times n$ ($n=|V|$) symmetric matrix defined by
+$$ L = D - A $$
+where $D = diag(d_1, d_2, \dots, d_n)$ is the degree matrix, and $A$ is the adjacency matrix.
+
+$$ L = {\nabla}^{T}\nabla $$
+
+\subparagraph{normalized version} of the Laplacian matrix is:
+$$ L^{norm}(G) =
+  \begin{cases}
+    1 & \text{if $i=j$ and $d_j \not= 0$} \\
+    - \frac{1}{\sqrt{d_i d_j}} & \text{if $i$ and $j$ are adjacent} \\
+    0 & \text{otherwise}
+  \end{cases}
+$$
+
+or:
+
+$$ L^{norm}(G) = I - D^{- \frac{1}{2}} A D^{- \frac{1}{2}} $$
+
+All eigenvalues of the normalized Laplacian are real and non-negative. If $\lambda$ is an eigenvalue of $L$, then $ 0 \le \lambda \le 2 $. These eigenvalues are the spectra of the normalized Laplacian.
+
+\subsection{Spectral Graph Theory}
+
+\paragraph{Spectral Theory}
+for symmetric matrix: there exist n mutually orthogonal unit vectors $\psi_1, \psi_2, \ldots, \psi_n $ and numbers $ \lambda_1, \lambda_2, \ldots, \lambda_n $ such that
+$\psi_i$ is an eigenvector of eigenvallue $\lambda_i$.
+
+Useful characterization: optimization of {\em Rayleigh quotient}:
+$$ \frac{x^T M x}{x^T x} $$
+Easy to prove that if $ x = \psi $, its Rayleigh quotient is $ \lambda $.
+
+\begin{theorem}
+  The maximum vector that maximizes Rayleigh quotient is an eigenvector associated with the maximum eigenvalue. (Similar for minimum)
+  (prove using matrix derivative)
+\end{theorem}
+
+\paragraph{Isoperimetry and $ \lambda_2 $ } The {\em isoperimetric ratio} of S, a sub-graph is:
+$$ \partial (S) \equiv { (u, v) \in E: u \in S, v \not\in S}. $$
+The {\em isoperimetric number} of a graph is the minimum isoperimetric number over all sets of at most half the vertices:
+$$ \theta_G \equiv \min_{|S| \le n/2} \theta (S). $$
+Lower bound on $ \theta_G $:
+
+\begin{theorem}
+  For every $ S \subset V $,
+  $ \theta (S) \ge \lambda_2 (1 - s) $,
+  where $ s = \frac{|S|}{|V|} $.
+\end{theorem}
+The proof makes use of the characteristic vector of S, 
+$$ \chi_S (u) =
+  \begin{cases}
+    1 & \text{if $ u \in S $} \\
+    0 & \text{otherwise.}
+  \end{cases}
+$$
+
+\subsection{Common Graphs}
+
+\begin{lemma}
+  The Laplacian of $K_n$ (complete graph) has eigenvalue $0$ with multiplicity $1$ and $n$ with multiplicity $ n - 1 $. (check all vectors orthogonal to all-1s vector)
+\end{lemma}
+
+\begin{lemma}
+  $ v, w $ are vertices of degree one that are both connected to another vertex $z$. The vector $\psi$ given by:
+$$ \psi (u) = 
+  \begin{cases}
+    1 & u = v \\
+    -1 & u = w \\
+    0 & \text{otherwise.}
+  \end{cases}
+$$
+is an eigenvector of the Laplacian of G of eigenvalue 1.
+\end{lemma}
+
+\begin{lemma}
+The graph $ S_n $ (star graph) has eigenvalue $0$ with multiplicity $1$, eigenvalue $1$ with multiplicity $ n - 2 $ and eigenvalue $n$ with multiplicity $1$.
+(use previous lemma, and trace of a matrix equal to both sum of diagonal entries and eigenvalues)
+\end{lemma}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Graph Peoperties}
+\paragraph{Conductance}
+In graph theory the conductance of a graph G=(V,E) measures how "well-knit" the graph is: it controls how fast a random walk on G converges to a uniform distribution.
+The conductance of a graph is often called the Cheeger constant of a graph as the analog of its counterpart in spectral geometry.
+
+\paragraph{Small World Network}
+A small-world network is a type of mathematical graph in which most nodes are not neighbors of one another, but most nodes can be reached from every other by a small
+number of hops or steps. Specifically, a small-world network is defined to be a network where the typical distance $L$ between two randomly chosen nodes (the number of
+steps required) grows proportionally to the logarithm of the number of nodes $N$ in the network.
+
+$\displaystyle L\propto logN$
+
+\subsection{Basic operations} 
+
+
+
+
+
+
+
+

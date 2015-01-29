@@ -1,0 +1,122 @@
+
+\section{C-Elegans} 
+\label{section:c-elegans} 
+
+Caenorhabditis elegans (pron.: /ˌseɪnɵræbˈdɪtɪs ˈɛlɛɡænz/) is a free-living, transparent nematode (roundworm).
+
+\begin{itemize}
+  \item Size: about 1mm in length
+  \item Number of neurons: 
+    It is one of the simplest organisms with a nervous system. In the hermaphrodite, this comprises 302 neurons whose pattern of connectivity, or "connectome", has been
+    completely mapped and shown to be a \href{http://en.wikipedia.org/wiki/Small-world-network}{small-world network}.
+  \item Number of synapses: 7000
+  \item Sex: C-elegans has two sexes: hermaphrodites and males. Sex in C. elegans is based on an X0 sex-determination system.
+
+  {\tt http://worms.aecom.yu.edu/}
+\end{itemize}
+
+\subsection{Clustering}
+To perform natural computation efficiently: specialized modules with locally dense connections
+
+\paragraph{Significance} of the existence of clusters: organization of functional modules.Ganglion vs. synaptic connection;
+Topological nature of the structure plays an important role in the information processing of C-elegans network.
+
+\paragraph{C-elegans wiring}
+5 anatomical clusters in the C-elegans eonnectome, which correspond to experimentally-identified functional circuits.
+cooperation including mechanosensation, chemosensation and navigation
+
+\subsubsection{complex network analysis}
+Brain: small-world topology from microscopic level (eg. that of C-elegans)
+Scale-free degree distribution
+structural and functional motifs
+Robustness and fragility of brain structural networks with respect to lesions and diseases
+
+Determination and characterization of hierarchical sluster structure: densely connected groups of nodes with sparser connections among groups
+Topological clusters in brain structure may correspond to sets of distinct anatomical modeules of neurons.
+
+\subsubsection{method} 
+Modularity-based community detection algorithm for directed weighted networks. (modularity maximizatio approach)
+\paragraph{Modularity}
+is a quantitative measure defined as the number of edges falling within groups minus the expected number in an equivalent network with edges placed at random.
+The modularity value $Q$, indicates the degree to which a given paritition maximizes intra-cluster weights and minimizes inter-cluster weights. Define:
+$Q=\frac{1}{4W} s^{T}(B + B^{T})s,$ \\
+$B_{ij} = A_{ij} - \frac{S_i^{in} S_j^{out}}{W} $ \\
+$B_{ij}$: the extent to which the connections from j to i are prominent. \\
+$W = \sum_{ij} A_{ij} = \sum_i S_i^{in} = \sum_i S_i^{out}$
+\\
+Postive values demonstrate the possible presence of cluster structure.
+
+\paragraph{Complexity}:
+ NP-complete; approximation heuristics to obtain a near-optimal community assignment vector.
+Constraints for C-elegans: information given by bilateral functional symmetry of the neuron cells.
+Simulated annealing method: a generic probabillistic metaheuristic for the global optimization problem of locating a good approximation to the global optimum of a given
+function in a large search space.
+
+Prior knowledge: to reduce the number of community assignment vectors
+bilateral nuronal pairs have similar functional roles, accepting the principle of structure-function association in evolutionary biology.
+
+Spectral detection; fast unfolding.
+
+\subsubsection{graph model}
+Degree: number of synaptic partner neurons of a neuron
+Weight: appropriate sum of synapses between specific neuronal partners
+Strength: total weights of synaptic connections afferent to or eferent from a neuron.
+
+\subsubsection{result}
+\begin{quote}{While C. elegans
+neurons are spatially concentrated in a manner related to their
+ganglionic affiliation, we failed to observe a strong spatial
+localization of neurons belonging to the same cluster, except for
+those in clusters 11 and 12.}
+\end{quote}
+
+\paragraph{Hierarchical relationship}
+of clusters is shown from the reordered adjacency matrix of C-elegans connectome.
+
+\paragraph{Index of Qualitative Variation} measures the diversity of types of ganglia in one cluster. 4 of 5 clusters did not display dominant neurotransmitter type.
+Low level of correlation between ganglia and cluster assignment.
+
+\paragraph{Functional Cartography}
+\begin{itemize}
+  \item within-module weight
+  \item participation coefficient
+\end{itemize}
+Characterize each neuron as either provincial or peripheral node, a hub, or a node with few within-module degrees. The types of nodes have a correlation with the types
+of neurons.
+
+\paragraph{Use in Complex Behaviors}
+Hub Cluster: outward synapses to clusters having many inward synapses;
+authoritative clusters have inward synapses from clusters that bridge to them through outward synapses.
+
+\begin{quote}{Thus, the body-spanning cluster 22, whose members are
+predominantly motor neurons, acted as an ‘authority’ receiving
+information from hub clusters to produce consequential behaviors.}
+\end{quote}
+
+\begin{quote}{the structural clusters indentified in
+this study appear to serve as a cohesive sub-module for
+information processing at various stages.}
+\end{quote}
+
+\subsubsection{Present Constraints}
+\begin{itemize}
+  \item The lack of more appropriate model about inhibitory / excitatory sysnapses (some paper makes rough guess of the signs of synapses based on neurotransmitter gene
+expression data.)
+  \item Directionality for gap junctions (even if it existed) cannot be extracted from electron micrographs.
+  \item When a presynaptic terminal makes contact with two adjacent processes of different neurons, it is not known which of these processes acts as a postsynaptic
+terminal; both might be involved.
+\end{itemize}
+
+\subsubsection{Ref}
+\url{web.mit.edu/lrv/www/elegans/}  provides information about algorithmic approach to analyzing C-elegans neuronal network data.
+\url{www.wormatlas.org/ver1/MoW_built0.92/toc.html}  structure of the nervous system of C-elegans
+
+\input{spectral-C-elegans}
+
+\input{touch-circuit}
+
+\newpage
+
+\input{work/06-18-2013}
+
+\input{C-elegans-data/male-wiring-data}

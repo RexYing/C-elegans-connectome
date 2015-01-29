@@ -1,0 +1,44 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{C}\relax \glsresetentrylist %
+\glossaryentryfield{cluster-coefficient}{\glsnamefont{Cluster Coefficient}}{ measures the density of connections among an average neuron's neighbors. \cite {varshney_structural_2011}. $$ C = \frac {1}{N} \sum _{i} C_i $$ $$ C_i = \frac {2E(\mathcal {N}_i)}{k_i(k_i - 1)} $$ where $ E(\mathcal {N}_i) $ is the number of connections between neighbors of $i$, $k_i$ is the number of neighbors of $i$, and $C_i$ measures the density of connections in the neighborhood of neuron i (set $ C_i = 1 $ when $ k_i = 1 $). }{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{14}\delimN 
+		\setentrycounter{page}\glsnumberformat{32}}}\glsgroupskip
+\glsgroupheading{D}\relax \glsresetentrylist %
+\glossaryentryfield{dendrogram}{\glsnamefont{Dendrogram}}{ Tree diagram frequently used to illustrate the arrangement of the clusters produced by hierarchical clustering. }{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{32}}}\glsgroupskip
+\glsgroupheading{I}\relax \glsresetentrylist %
+\glossaryentryfield{IQV}{\glsnamefont{Index of Qualitative Variation}}{ measures the heterogeneity of composition in a cluster. High IQV scores for a cluster indicate that the cluster is composed of various neuronal types or ganglionic neurons. }{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{32}}}\glsgroupskip
+\glsgroupheading{J}\relax \glsresetentrylist %
+\glossaryentryfield{jaccard-coefficient}{\glsnamefont{Jaccard Coefficient}}{ The Jaccard similarity coefficientcient of two nodes i and j is $$ \frac {|neighbors(i) \cap neighbors(j)|}{|neighbors(i) \cup neighbors(j)|} $$ }{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{14}\delimN 
+		\setentrycounter{page}\glsnumberformat{32}}}\glsgroupskip
+\glsgroupheading{L}\relax \glsresetentrylist %
+\glossaryentryfield{local-motif}{\glsnamefont{Local Motif}}{ Or network motif: "patterns of interconnections occuring in complex networks at numbers that are significantly higher than those in randomized networks. }{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{32}}}\glsgroupskip
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossaryentryfield{modularity-community}{\glsnamefont{Modularity-based Community Detection}}{ From paper: Community structure in directed networks (doi: doi:10.1371/journal.pone.0037292) and Finding community structure in very large networks (Clauset et al) }{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{32}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossaryentryfield{participation-coefficient}{\glsnamefont{Participation Coefficient}}{ quantifies how extensively the connections of a neuron are distributed among different clusters. }{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{32}}}%
+\glossaryentryfield{power-law}{\glsnamefont{Power-law Degree Distributions}}{ Degree of distribution follows a power law (at least aymptotically): the fraction $ P(k) $ of nodes in the network having k connections to other nodes goes for large values of k as $$ P(k) \sim k^{- \gamma } $$ A scale-free network follows such degree distribution. }{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{14}\delimN 
+		\setentrycounter{page}\glsnumberformat{32}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossaryentryfield{annealing}{\glsnamefont{Simulated Annealing}}{ A method of stochastic optimization: \href {run:../readings/Metropolis_hmc.pdf}{Simulated Annealing \& Metropolis Algorithm} }{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{32}}}%
+\glossaryentryfield{survival-function}{\glsnamefont{Survival Function}}{ The complement of cumulative distributio function. It captures the probability that the system will survive beyond a specified measure (time or others) }{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{14}\delimN 
+		\setentrycounter{page}\glsnumberformat{32}}}\glsgroupskip
+\glsgroupheading{T}\relax \glsresetentrylist %
+\glossaryentryfield{t-test}{\glsnamefont{T-test}}{ any statistical hypothesis test in which the test statistic follows a Student's t distribution if the null hypothesis is supported. }{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{32}}}\glsgroupskip
+\glsgroupheading{V}\relax \glsresetentrylist %
+\glossaryentryfield{variation-of-information}{\glsnamefont{Variation of Information}}{ between two partitions $C$ and $C'$ is defined as follows: $$ V(C, C') = V(X, Y) = H(X | Y) + H(Y | X) ,$$ where $X$ and $Y$ denote the vectors representing the cluster assignment of community divisions $C$ and $C'$, respectively. $ H(X | Y) $ is the conditional entropy indicating the amount of additional information needed to describe $C$ given $C'$. }{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{32}}}\glsgroupskip
+\glsgroupheading{W}\relax \glsresetentrylist %
+\glossaryentryfield{within-module-weight}{\glsnamefont{Within Module Weight}}{ evaluates how strongly a neuron is connected to other neurons within its cluster. }{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{32}}}%
+\end{theglossary}\glossarypostamble

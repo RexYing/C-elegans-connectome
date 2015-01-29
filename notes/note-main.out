@@ -1,0 +1,34 @@
+\BOOKMARK [1][-]{section.1}{Graph basics}{}
+\BOOKMARK [2][-]{subsection.1.1}{definitions}{section.1}
+\BOOKMARK [2][-]{subsection.1.2}{Spectral Graph Theory}{section.1}
+\BOOKMARK [2][-]{subsection.1.3}{Common Graphs}{section.1}
+\BOOKMARK [2][-]{subsection.1.4}{Graph Peoperties}{section.1}
+\BOOKMARK [2][-]{subsection.1.5}{Basic operations}{section.1}
+\BOOKMARK [1][-]{section.2}{HCP : Tutorial }{}
+\BOOKMARK [2][-]{subsection.2.1}{Concepts}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{About the project}{section.2}
+\BOOKMARK [1][-]{section.3}{C-Elegans}{}
+\BOOKMARK [2][-]{subsection.3.1}{Clustering}{section.3}
+\BOOKMARK [3][-]{subsubsection.3.1.1}{complex network analysis}{subsection.3.1}
+\BOOKMARK [3][-]{subsubsection.3.1.2}{method}{subsection.3.1}
+\BOOKMARK [3][-]{subsubsection.3.1.3}{graph model}{subsection.3.1}
+\BOOKMARK [3][-]{subsubsection.3.1.4}{result}{subsection.3.1}
+\BOOKMARK [3][-]{subsubsection.3.1.5}{Present Constraints}{subsection.3.1}
+\BOOKMARK [3][-]{subsubsection.3.1.6}{Ref}{subsection.3.1}
+\BOOKMARK [2][-]{subsection.3.2}{Spectral Analysis of C-elegans}{section.3}
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Mathematical model}{subsection.3.2}
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Simplification of HH Equation}{subsection.3.2}
+\BOOKMARK [2][-]{subsection.3.3}{Touch Circuit of C. elegans}{section.3}
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Classification}{subsection.3.3}
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Data}{subsection.3.3}
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Testing}{subsection.3.3}
+\BOOKMARK [2][-]{subsection.3.4}{Other functional circuits suggested}{section.3}
+\BOOKMARK [2][-]{subsection.3.5}{June 18 2013 Work Notes}{section.3}
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Centrality}{subsection.3.5}
+\BOOKMARK [1][-]{section.4}{Male C-elegans Wiring Data}{}
+\BOOKMARK [2][-]{subsection.4.1}{Neuron List}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{Hermaphrodite C. elegans information}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Neuron Centrality}{subsection.4.2}
+\BOOKMARK [1][-]{section.5}{MATLAB}{}
+\BOOKMARK [2][-]{subsection.5.1}{Frequently Used Commands}{section.5}
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Ganglion Information}{subsection.4.2}

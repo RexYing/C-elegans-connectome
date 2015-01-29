@@ -1,0 +1,98 @@
+% 
+\documentclass[12pt]{article} 
+
+\usepackage[normalem]{ulem} 
+\usepackage{amsfonts} 
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{setspace}
+
+% ... graphics and figures 
+
+\usepackage{graphicx} 
+\usepackage{float}
+% \usepackage{pdftex}
+%\usepackage{xcolor}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+
+% table --------------------------------
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{array}
+
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1} }
+
+\newcommand\arabcount[1]{\arabic{#1} \stepcounter{#1} }
+
+% Math -----------------------------------------------------
+
+\newtheorem{theorem}{Theorem}[subsection]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}{Corollary}[subsection]
+
+% Customize color for clustering ----------------------------
+\newcommand\colorA[1]{\textbf{\color{red}#1} }
+\newcommand\colorB[1]{\textbf{\color{orange}#1} }
+\newcommand\colorC[1]{\textbf{\color{green}#1} }
+\newcommand\colorD[1]{\textbf{\color{blue}#1} }
+\newcommand\colorE[1]{\textbf{\color{violet}#1} }
+
+% Hyperref ------------------------------
+\usepackage{hyperref}
+
+% Glossary after Hyperref--------------------------------------------------
+\usepackage[acronym,nonumberlist]{glossaries}
+\makeglossaries
+
+\input{glossary/sohn_topological_2011}
+\input{glossary/varshney_structural_2011}
+\input{glossary/general_graph}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Document Begins
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{Rex's personal study notes} 
+\author{Rex} 
+\date{May 8, 2013} 
+\maketitle 
+
+
+% ------------------------------------
+
+
+\input{graph-theory} 
+
+\input{HCP-tutorial} 
+
+\input{C-elegans} 
+
+\input{Matlab} 
+
+\newpage
+\glsaddall
+\printglossary
+
+\printglossary[type=\acronymtype]
+
+% -------------------bibliography ----------------------------------------
+\newpage 
+
+% -------------------------
+% \bibliographystyle{abbrv} 
+% \bibliographystyle{unsrt} 
+% \bibliographystyle{alpha}  
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{C-elegans_cluster.bib}
+
+
+\end{document}
+
