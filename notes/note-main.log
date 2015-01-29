@@ -1,0 +1,1522 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.4)  17 JUL 2013 17:07
+entering extended mode
+ %&-line parsing enabled.
+**note-main.tex
+(./note-main.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/ulem.sty
+\UL@box=\box26
+\UL@hyphenbox=\box27
+\UL@skip=\skip43
+\UL@hook=\toks14
+\UL@pe=\count87
+\UL@pixel=\dimen103
+\ULC@box=\box28
+Package: ulem 2000/05/26
+\ULdepth=\dimen104
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen105
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks17
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks18
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks19
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf-texlive/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks21
+\thm@bodyfont=\toks22
+\thm@headfont=\toks23
+\thm@notefont=\toks24
+\thm@headpunct=\toks25
+\thm@preskip=\skip47
+\thm@postskip=\skip48
+\thm@headsep=\skip49
+\dth@everypar=\toks26
+)
+(/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks27
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count100
+))
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+)
+(/usr/share/texmf-texlive/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count101
+\float@exts=\toks28
+\float@box=\box31
+\@float@everytoks=\toks29
+\@floatcapt=\box32
+)
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texmf-texlive/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
+
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen116
+\extrarowheight=\dimen117
+\NC@list=\toks30
+\extratabsurround=\skip50
+\backup@length=\skip51
+)
+\everycr=\toks31
+\minrowclearance=\skip52
+)
+\rownum=\count102
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texmf-texlive/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen118
+)
+(/usr/share/texmf-texlive/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen119
+\lightrulewidth=\dimen120
+\cmidrulewidth=\dimen121
+\belowrulesep=\dimen122
+\belowbottomsep=\dimen123
+\aboverulesep=\dimen124
+\abovetopsep=\dimen125
+\cmidrulesep=\dimen126
+\cmidrulekern=\dimen127
+\defaultaddspace=\dimen128
+\@cmidla=\count103
+\@cmidlb=\count104
+\@aboverulesep=\dimen129
+\@belowrulesep=\dimen130
+\@thisruleclass=\count105
+\@lastruleclass=\count106
+\@thisrulewidth=\dimen131
+)
+(/usr/share/texmf-texlive/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip53
+\LTright=\skip54
+\LTpre=\skip55
+\LTpost=\skip56
+\LTchunksize=\count107
+\LTcapwidth=\dimen132
+\LT@head=\box33
+\LT@firsthead=\box34
+\LT@foot=\box35
+\LT@lastfoot=\box36
+\LT@cols=\count108
+\LT@rows=\count109
+\c@LT@tables=\count110
+\c@LT@chunks=\count111
+\LT@p@ftn=\toks32
+)
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2008/12/21 v4.2 Page Geometry
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count112
+\Gm@cntv=\count113
+\c@Gm@tempcnt=\count114
+\Gm@bindingoffset=\dimen133
+\Gm@wd@mp=\dimen134
+\Gm@odd@mp=\dimen135
+\Gm@even@mp=\dimen136
+\Gm@dimlist=\toks33
+
+(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
+\c@theorem=\count115
+\c@corollary=\count116
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen137
+\Hy@linkcounter=\count117
+\Hy@pagecounter=\count118
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3428.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count119
+\Field@Width=\dimen138
+\Fld@charsize=\dimen139
+\Field@toks=\toks34
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring OFF on input line 4397.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count120
+\c@Item=\count121
+\c@Hfootnote=\count122
+)
+*hyperref using default driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+\Fld@listcount=\count123
+)
+(/usr/share/texmf-texlive/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2009/09/23 v2.03 (NLCT)
+
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+(/usr/share/texmf-texlive/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks35
+\XKV@tempa@toks=\toks36
+\XKV@depth=\count124
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+))
+(/usr/share/texmf-texlive/tex/latex/glossaries/base/mfirstuc.sty
+Package: mfirstuc 2008/12/22 v1.03 (NLCT)
+)
+(/usr/share/texmf-texlive/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+\gls@level=\count125
+\@gls@tmpb=\toks37
+\gls@tmplen=\skip57
+\istfile=\write3
+
+(/usr/share/texmf-texlive/tex/latex/glossaries/styles/glossary-hypernav.sty
+Package: glossary-hypernav 2007/07/04 v1.01 (NLCT)
+)
+(/usr/share/texmf-texlive/tex/latex/glossaries/styles/glossary-list.sty
+Package: glossary-list 2009/05/30 v2.01 (NLCT)
+\glslistdottedwidth=\skip58
+)
+(/usr/share/texmf-texlive/tex/latex/glossaries/styles/glossary-long.sty
+Package: glossary-long 2009/05/30 v2.01 (NLCT)
+\glsdescwidth=\skip59
+\glspagelistwidth=\skip60
+)
+(/usr/share/texmf-texlive/tex/latex/glossaries/styles/glossary-super.sty
+Package: glossary-super 2009/05/30 v2.01 (NLCT)
+
+(/usr/share/texmf-texlive/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count126
+\ST@wd=\dimen140
+\ST@rightskip=\skip61
+\ST@leftskip=\skip62
+\ST@parfillskip=\skip63
+\ST@pageleft=\dimen141
+\ST@headht=\dimen142
+\ST@tailht=\dimen143
+\ST@pagesofar=\dimen144
+\ST@pboxht=\dimen145
+\ST@lineht=\dimen146
+\ST@stretchht=\dimen147
+\ST@prevht=\dimen148
+\ST@toadd=\dimen149
+\ST@dimen=\dimen150
+\ST@pbox=\box37
+))
+(/usr/share/texmf-texlive/tex/latex/glossaries/styles/glossary-tree.sty
+Package: glossary-tree 2009/01/14 v1.01 (NLCT)
+\glstreeindent=\skip64
+))
+\glo@main@file=\write4
+\openout4 = `note-main.glo'.
+
+Package glossaries Info: Writing glossary file note-main.glo on input line 47.
+\glo@acronym@file=\write5
+\openout5 = `note-main.acn'.
+
+Package glossaries Info: Writing glossary file note-main.acn on input line 47.
+
+(./glossary/sohn_topological_2011.tex) (./glossary/varshney_structural_2011.tex
+) (./glossary/general_graph.tex) (./note-main.aux)
+\openout1 = `note-main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count127
+\scratchdimen=\dimen151
+\scratchbox=\box38
+\nofMPsegments=\count128
+\nofMParguments=\count129
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count130
+\MPscratchDim=\dimen152
+\MPnumerator=\count131
+\everyMPtoPDFconversion=\toks39
+)
+*geometry auto-detecting driver*
+*geometry detected driver: pdftex*
+-------------------- Geometry parameters
+paper: class default
+landscape: --
+twocolumn: --
+twoside: --
+asymmetric: --
+h-parts: 36.135pt, 542.02501pt, 36.135pt
+v-parts: 36.135pt, 722.7pt, 36.135pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: pdftex
+-------------------- Page layout dimensions and switches
+\paperwidth  614.295pt
+\paperheight 794.96999pt
+\textwidth  542.02501pt
+\textheight 722.7pt
+\oddsidemargin  -36.135pt
+\evensidemargin -36.135pt
+\topmargin  -73.135pt
+\headheight 12.0pt
+\headsep    25.0pt
+\footskip   30.0pt
+\marginparwidth 44.0pt
+\marginparsep   10.0pt
+\columnsep  10.0pt
+\skip\footins  10.8pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+Package hyperref Info: Link coloring OFF on input line 59.
+(/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count132
+)
+LaTeX Info: Redefining \ref on input line 59.
+LaTeX Info: Redefining \pageref on input line 59.
+ (./note-main.out)
+(./note-main.out)
+\@outlinefile=\write6
+\openout6 = `note-main.out'.
+
+\AtBeginShipoutBox=\box39
+LaTeX Font Info:    Try loading font information for U+msa on input line 65.
+ (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 65.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) (./graph-theory.tex
+[1
+
+\openout3 = `note-main.ist'.
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2pdfTeX warning (ext4): d
+estination with the same identifier (name{theorem.1.1}) has been already used, 
+duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.107 $
+       \displaystyle L\propto logN$pdfTeX warning (ext4): destination with the 
+same identifier (name{theorem.1.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.107 $
+       \displaystyle L\propto logN$]) (./HCP-tutorial.tex) (./C-elegans.tex
+Missing character: There is no Ë in font cmr12!
+Missing character: There is no Œ in font cmr12!
+Missing character: There is no É in font cmr12!
+Missing character: There is no ª in font cmr12!
+Missing character: There is no É in font cmr12!
+Missing character: There is no µ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¦ in font cmr12!
+Missing character: There is no Ë in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no É in font cmr12!
+Missing character: There is no ª in font cmr12!
+Missing character: There is no É in font cmr12!
+Missing character: There is no ª in font cmr12!
+Missing character: There is no Ë in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no É in font cmr12!
+Missing character: There is no › in font cmr12!
+Missing character: There is no É in font cmr12!
+Missing character: There is no › in font cmr12!
+Missing character: There is no É in font cmr12!
+Missing character: There is no ¡ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¦ in font cmr12!
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 8.
+
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+ [3]
+Overfull \hbox (7.33835pt too wide) in paragraph at lines 25--27
+ \OT1/cmr/bx/n/12 C-elegans wiring[] \OT1/cmr/m/n/12 5 anatom-i-cal clus-ters i
+n the C-elegans eon-nec-tome, which cor-re-spond to experimentally-
+ []
+
+[4]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ˜ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ (./spectral-C-elegans.tex [5]
+<graphics/ActionPotential.png, id=205, 602.25pt x 432.61626pt>
+File: graphics/ActionPotential.png Graphic file (type png)
+
+<use graphics/ActionPotential.png>
+<graphics/NeuronSignal.png, id=209, 501.875pt x 341.275pt>
+File: graphics/NeuronSignal.png Graphic file (type png)
+
+<use graphics/NeuronSignal.png>
+Overfull \hbox (5.62184pt too wide) in paragraph at lines 36--37
+[]$\OML/cmm/m/it/12 Na[]$ \OT1/cmr/m/n/12 ion causes the mem-brane to be pos-i-
+tively charged. Potas-sium ion starts to leave the cell(inhibitory
+ []
+
+[6 <./graphics/ActionPotential.png> <./graphics/NeuronSignal.png (PNG copy)>]
+<graphics/ActionPotential2.png, id=221, 1003.75pt x 991.705pt>
+File: graphics/ActionPotential2.png Graphic file (type png)
+
+<use graphics/ActionPotential2.png> [7 <./graphics/ActionPotential2.png>]
+<graphics/RateConstants.png, id=233, 745.78625pt x 589.20125pt>
+File: graphics/RateConstants.png Graphic file (type png)
+
+<use graphics/RateConstants.png> [8]) (./touch-circuit.tex [9 <./graphics/RateC
+onstants.png>] [10]
+<graphics/TouchCircuit.png, id=260, 613.93pt x 357.66275pt>
+File: graphics/TouchCircuit.png Graphic file (type png)
+
+<use graphics/TouchCircuit.png>
+Overfull \hbox (19.9395pt too wide) in paragraph at lines 77--94
+[][] 
+ []
+
+[11 <./graphics/TouchCircuit.png (PNG copy)>]
+<graphics/LearnedNaClAversion.png, id=274, 679.53876pt x 490.83376pt>
+File: graphics/LearnedNaClAversion.png Graphic file (type png)
+
+<use graphics/LearnedNaClAversion.png>
+Overfull \hbox (1.60675pt too wide) in paragraph at lines 104--106
+ [][] 
+ []
+
+<graphics/ElectroSensoryCircuit.jpg, id=276, 1806.75pt x 1707.37875pt>
+File: graphics/ElectroSensoryCircuit.jpg Graphic file (type jpg)
+
+<use graphics/ElectroSensoryCircuit.jpg> [12 <./graphics/LearnedNaClAversion.pn
+g>]) [13 <./graphics/ElectroSensoryCircuit.jpg>] (./work/06-18-2013.tex
+\c@FigureCounter=\count133
+
+[14]) (./C-elegans-data/male-wiring-data.tex (./C-elegans-data/neuron_list.tex
+[15]
+\c@ClusterCounter=\count134
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\OT1/cmr/m/n/12 Cluster
+ []
+
+
+Overfull \hbox (248.97693pt too wide) in alignment at lines 12--48
+ [] [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]|\OT1/cmr/m/n/12 head - lat-eral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+\OT1/cmr/m/n/12 / retro-vesic-u-lar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
+[]|\OT1/cmr/m/n/12 head - lat-eral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
+\OT1/cmr/m/n/12 / retro-vesic-u-lar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+[]|\OT1/cmr/m/n/12 Head - lat-eral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+\OT1/cmr/m/n/12 / retro-vesic-u-lar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+[]|\OT1/cmr/m/n/12 head - lat-eral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+\OT1/cmr/m/n/12 / retro-vesic-u-lar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]|\OT1/cmr/m/n/12 head - lat-eral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\OT1/cmr/m/n/12 / retro-vesic-u-lar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+[]|\OT1/cmr/m/n/12 head - lat-eral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\OT1/cmr/m/n/12 / retro-vesic-u-lar
+ []
+
+
+Overfull \hbox (248.97693pt too wide) in alignment at lines 48--78
+ [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 81--81
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 83--83
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 85--85
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (248.97693pt too wide) in alignment at lines 78--104
+ [] [] [] [] [] [] [] [] 
+ []
+
+[16]
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 105--105
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 107--107
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 109--109
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 113--113
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 115--115
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 123--123
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 125--125
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 127--127
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 131--131
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 133--133
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 136--137
+[]|\OT1/cmr/m/n/12 Process from cell body En-ters right side com-mis-
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 137--137
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 141--141
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 143--143
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Overfull \hbox (248.97693pt too wide) in alignment at lines 104--145
+ [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 145--145
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 147--147
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 149--149
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 151--151
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 161--161
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 163--163
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 165--165
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 167--167
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 169--169
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 173--173
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 175--175
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 177--177
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 179--179
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 181--181
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 183--183
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (248.97693pt too wide) in alignment at lines 145--185
+ [] [] [] [] [] [] [] [] 
+ []
+
+[17]
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 185--185
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 187--187
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 191--191
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 193--193
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 195--195
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 197--197
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 201--201
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--211
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 213--213
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--221
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 223--223
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Overfull \hbox (248.97693pt too wide) in alignment at lines 185--225
+ [] [] [] [] [] [] [] [] 
+ []
+
+[18]
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 225--225
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 227--227
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--237
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 237--237
+[]|\OT1/cmr/m/n/12 posterior half of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 239--239
+[]|\OT1/cmr/m/n/12 posterior half of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--247
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--253
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--255
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--259
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Overfull \hbox (248.97693pt too wide) in alignment at lines 225--265
+ [] [] [] [] [] [] [] [] 
+ []
+
+[19]
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 265--265
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 267--267
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 269--269
+[]|\OT1/cmr/m/n/12 posterior half of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--271
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 271--271
+[]|\OT1/cmr/m/n/12 posterior half of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--273
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--273
+[]|\OT1/cmr/m/n/12 left - pos-te-rior
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 287--287
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 289--289
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 298--299
+[]|\OT1/cmr/m/n/12 Several branches with in-put from PCA, CP07-09,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--303
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Overfull \hbox (248.97693pt too wide) in alignment at lines 265--305
+ [] [] [] [] [] [] [] [] 
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--307
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--309
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--311
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--313
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--315
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--317
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--319
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--321
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--327
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--329
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--331
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--343
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Overfull \hbox (248.97693pt too wide) in alignment at lines 305--345
+ [] [] [] [] [] [] [] [] 
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 345--345
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--351
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--359
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--363
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--365
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--367
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--371
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 375--375
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Overfull \hbox (8.03857pt too wide) in paragraph at lines 377--377
+[]|[]\OT1/cmr/bx/n/12 Insemination[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 379--379
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 381--381
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--383
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 383--383
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (248.97693pt too wide) in alignment at lines 345--385
+ [] [] [] [] [] [] [] [] 
+ []
+
+[22] [23] [24] [25]
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]|\OT1/cmr/m/n/12 sensory neu-
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 385--385
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 389--389
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 391--391
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 393--393
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 395--395
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 397--397
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 399--399
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 401--401
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 403--403
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 405--405
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 407--407
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 409--409
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 411--411
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 413--413
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 415--415
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Overfull \hbox (0.94968pt too wide) in paragraph at lines 417--417
+[]|[]\OT1/cmr/bx/n/12 Locomotion[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--421
+[]|\OT1/cmr/m/n/12 link to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--421
+\OT1/cmr/m/n/12 map,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--421
+\OT1/cmr/m/n/12 synapse
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--421
+\OT1/cmr/m/n/12 lists,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--421
+\OT1/cmr/m/n/12 cir-cuit
+ []
+
+
+Underfull \hbox (badness 6775) in paragraph at lines 421--421
+[]|\OT1/cmr/m/n/12 location of cell
+ []
+
+
+Overfull \hbox (248.97693pt too wide) in alignment at lines 385--423
+ [] [] [] [] [] [] [] [] 
+ []
+
+[26] [27] [28] [29] [30]) (./C-elegans-data/herm-info.tex))) (./Matlab.tex)
+[31] (./note-main.gls [32])
+No file note-main.acr.
+[33] (./note-main.bbl
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+) [34] [35] (./note-main.aux) ) 
+Here is how much of TeX's memory you used:
+ 7924 strings out of 493848
+ 115069 string characters out of 1152824
+ 306067 words of memory out of 3000000
+ 10811 multiletter control sequences out of 15000+50000
+ 14371 words of font info for 56 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 41i,15n,36p,1262b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.5} has bee
+n referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texl
+ive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/t
+ype1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></
+usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on note-main.pdf (35 pages, 947462 bytes).
+PDF statistics:
+ 547 PDF objects out of 1000 (max. 8388607)
+ 172 named destinations out of 1000 (max. 500000)
+ 308 words of extra memory for PDF output out of 10000 (max. 10000000)
+

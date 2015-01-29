@@ -1,0 +1,54 @@
+\subsection{June 18 2013 Work Notes}
+\label{06-18-2013}
+
+\newcounter{FigureCounter}
+\setcounter{FigureCounter}{1}
+
+Parsing of hermaphrodite C. elegans neuron connection.
+
+\paragraph{Read neuron connect data} from a csv file converted from an excel file "NeuronConnect" downloaded from 2.1 of \url{http://www.wormatlas.org/neuronalwiring.html} (\cite{varshney_structural_2011}). 
+
+script file name: Run\_parseHermConnectome.m.
+
+\paragraph{Figure} \arabcount{FigureCounter}: sparse graph of electric junction visualization.
+
+\paragraph{Figure} \arabcount{FigureCounter} and \arabcount{FigureCounter}: degree/strength plot in descending order. Max degree: 40; max nodal strength: 113.
+
+\paragraph{Figure} \arabcount{FigureCounter}: \Gls{survival-function} for degrees of gap junction network. In real world, there is often noise present at the tail of the
+degree distribution: the degree distribution has a long right tail of values that are far above the mean. One method to get arround the problem is to construct a
+histogram in which the bin sizes increase exponentially with degree (number of samples in each bin is divided by the width of the bin to normalize measurement); the
+other way is to use CDF/survival function (the advantage is there is no loss of information). (in order to check \gls{power-law}).
+
+\paragraph{Figure} \arabcount{FigureCounter}: Histogram of Path Length for Herm Gap Junction Network (weighted). The shortest path computation is done using bioinformatics toolbox
+(Johnson Algorithm). Average path length is also calculated.
+
+\paragraph{Other measures}: \Gls{jaccard-coefficient}, \Gls{cluster-coefficient}
+
+\paragraph{Figure} \arabcount{FigureCounter}: sparse graph of Chemical junction visualization.
+
+\subsubsection{Centrality}
+
+Various measures of centrality are used to determine the relative importance of a vertex within the graph.
+
+\paragraph{Degree Centrality} is defined as the number of links incident upon a node. In the case of directed graph, indegree and outdegree centrality values are
+calculated. (Definition can be extended to evaluate centrality of graph)
+
+\paragraph{Closeness Centrality} of a node is its total distance to all other nodes. The smaller the value, the more central is the node.
+
+\paragraph{Betweenness Centrality} of a vertex within a graph quantifies the number of times a node acts as a bridge along the shortest path between two other nodes.
+Vertices that have a high probability to occur on a randomly chosen shortest path between two randomly chosen vertices have a high betweenness.
+
+$$ C_B(v) = \sum_{s \neq v \neq t \in V} \frac{\sigma_{st} (v)}{\sigma_{st}} $$
+
+Algorithm to compute betweenness of a vertex $v$ in a graph $ G = (V, E) $:
+\begin{itemize}
+  \item For each pair of vertices $ (s, t) $, compute the shortest path between them
+  \item For each pair of vertices $ (s, t) $, determine the fraction of shortest paths that pass through vertex v
+  \item Sum this fraction over all pairs of vertices $ (s, t) $
+\end{itemize}
+
+\paragraph{Eigenvector Centrality} uses the eigenvector that corresponds to the greatest eigenvector of the adjacency matrix of the graph $x$ to determin the influence
+of a node. The score of each node is $ x_i $, based on the concept that connections to high-scoring nodes contribute more to the score of the node in question than equal
+connections to low-scoring nodes.
+
+

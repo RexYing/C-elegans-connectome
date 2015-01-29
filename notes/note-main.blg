@@ -1,0 +1,45 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: note-main.aux
+The style file: plain.bst
+Database file #1: C-elegans_cluster.bib.bib
+You've used 15 entries,
+            2118 wiz_defined-function locations,
+            604 strings with 7290 characters,
+and the built_in function-call counts, 6208 in all, are:
+= -- 595
+> -- 364
+< -- 1
++ -- 148
+- -- 128
+* -- 555
+:= -- 1043
+add.period$ -- 46
+call.type$ -- 15
+change.case$ -- 109
+chr.to.int$ -- 0
+cite$ -- 15
+duplicate$ -- 187
+empty$ -- 417
+format.name$ -- 128
+if$ -- 1237
+int.to.chr$ -- 0
+int.to.str$ -- 15
+missing$ -- 15
+newline$ -- 79
+num.names$ -- 30
+pop$ -- 84
+preamble$ -- 1
+purify$ -- 94
+quote$ -- 0
+skip$ -- 132
+stack$ -- 0
+substring$ -- 434
+swap$ -- 34
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 60
+warning$ -- 0
+while$ -- 54
+width$ -- 17
+write$ -- 170
