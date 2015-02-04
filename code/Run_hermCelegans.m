@@ -19,24 +19,23 @@ close all
 
 % ... load data matrices A
 
-load( 'herm_connectomes.mat' );   % downloaded by Nikolaos S.
-                                  % without source recorded, unfortunately
+load( 'herm_gap_adj.mat' );  
                                   
 % ... display loaded adjacency matrices 
 
 figure 
-spy( Achem )
+spy( AChem )
 title(' Adjacency matrix named Achem '  )  
 
-dsymm = norm( Achem-Achem', 'fro');     % a measure for non-symmetry 
+dsymm = norm( AChem-AChem', 'fro');     % a measure for non-symmetry 
 dispMsg = sprintf( ' non-symmetry component in F-norm = %g ', dsymm ); 
 xlabel( dispMsg ) 
 
 figure
-spy(Agap)
+spy(AGap)
 title( ' Adjacency matrix named Agap '  ) 
 
-dsymm = norm( Agap-Agap', 'fro');       % measure for non-symmetry 
+dsymm = norm( AGap-AGap', 'fro');       % measure for non-symmetry 
 dispMsg = sprintf( ' non-symmetry component in F-norm = %g ', dsymm ); 
 xlabel( dispMsg ) 
 
@@ -45,14 +44,14 @@ xlabel( dispMsg )
 
 % ... processing the Agap matrix, which is symmetric 
 
-N       = size( Agap, 1 ) ; 
+N       = size( AGap, 1 ) ; 
 dispMsg = sprintf( ' Number of neurons included = %d ', N ); 
 disp( dispMsg ) ;           % need to study the near decoupling 
                             
-D    = sum( Agap, 2);       %  get the node degree distribution                 
-Lgap = diag(D) - Agap;      %  form the Laplacian matrix  
+D    = sum( AGap, 2);       %  get the node degree distribution                 
+LGap = diag(D) - AGap;      %  form the Laplacian matrix  
 
-[U, E] = eig( full( Lgap ) );  %  get the eigenvalue decomposition 
+[U, E] = eig( full( LGap ) );  %  get the eigenvalue decomposition 
 E  = diag(E);                  %  change the storage format to vector 
 [E, Pindx] = sort( abs(E), 'descend');  % sorting in the eigenvales 
 U  = U(:,Pindx);                        % permuting the eigenvectors 
@@ -92,13 +91,13 @@ colorbar
 %  ... spectral embedding of the graph 
 % ------------------------------------------------------------------
 
-spectral_range = 'small_spread'; 
+spectral_range = 'large_spread'; 
 
 switch spectral_range          % select an embedding subspace
     case 'small_spread' 
       k    = input( ' Enter spectral step size [1,80]  = ' ); 
       dispMsg = sprintf( '\n small spread within clusters \n ' ); 
-      inds = 2: k: 3*k ; 
+      inds = 2: k: 3*k+1 ; 
 
             % start with the highest spectral vector for clustering 
             % observation with the specific data 
@@ -109,12 +108,12 @@ switch spectral_range          % select an embedding subspace
   
   case 'large_spread' 
      k    = input( ' Enter spectral step size [1,9]  = ' ); 
-     inds = (N-Lzeros) - [0:k:3*k];     
+     inds = (N-Lzeros) - 0:k:3*k;     
             % more spread at the low-end of the spectrum 
-     dispMsg = sprintf( '\n Large spread within clusters \n ' );             
+     dispMsg = sprintf( '\n Large spread within clusters \n ' );
   
   otherwise 
-     error( ' unknown embedding case  ' ); 
+     error( ' unknown embedding case  ' );
 end
 
 disp( dispMsg ) ; 
@@ -156,7 +155,7 @@ title( [ '2D node clustering with', dispMsg ]  );
 figure
 plot( X(:,1), X(:,2), 'm.'); 
 hold on 
-gplot( Agap, X(:,1:2) );
+gplot( AGap, X(:,1:2) );
 grid on 
 title('2D spectral embedding of Agap'); 
 
@@ -171,7 +170,7 @@ pause
 figure
 plot3( X(:,1), X(:,2), X(:,3), 'm.'); 
 xlabel( 'dimension 1') 
-grid on; box on ; 
+grid on; box on; 
 rotate3d 
 
 dispMsg = sprintf( ' embedding vectors = [%d, %d, %d]\n', inds(1), ...
@@ -183,7 +182,7 @@ h = figure ;
 plot3( X(:,1), X(:,2), X(:,3), 'm.'); 
 xlabel( 'dimension 1') 
 hold on 
-gplot3D( Agap, X(:,1:3) );
+gplot3D( AGap, X(:,1:3) );
 title('3D spectral embedding of Agap');
 grid on 
 box on 

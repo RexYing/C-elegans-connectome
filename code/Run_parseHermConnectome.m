@@ -111,7 +111,7 @@ allPathsEj = allShortestEj(pathIndex);
 fprintf('Average path length for electric junction network: %d\n', mean(allPathsEj) );
 
 figure(figureCount); figureCount = figureCount + 1;
-hist(allPathsEj, 20); %slow
+hist(allPathsEj, 20); % slow
 title('Histogram of Path Length for Herm Gap Junction Network');
 xlabel('Path Length');
 ylabel('Number of Paths');

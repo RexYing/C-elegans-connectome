@@ -1,6 +1,6 @@
 function [ jaccard ] = jaccardcoefficientall( adjMat )
 %
-% Compute Jaccard Coefficient of each pair of vertices in a graph
+% Compute Jaccard Similarity Coefficient of each pair of vertices in a graph
 %
 % SYNTAX
 %
@@ -19,8 +19,8 @@ function [ jaccard ] = jaccardcoefficientall( adjMat )
 %
 % DESCRIPTION
 % 
-% The Jaccard similarity coecient of two nodes i and j is the size of 
-% neighbors(i) intersect neighbors(j) divived by neighbors(i) union
+% The Jaccard similarity coeffcient of two nodes i and j is the size of 
+% neighbors(i) intersect neighbors(j) divided by neighbors(i) union
 % neighbors(j).
 %
 % ALGORITHM

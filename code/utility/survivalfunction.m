@@ -1,6 +1,6 @@
 function [xAxis, percentAxis ] = survivalfunction( distribution )
 %
-% Compute survival function of a distribution (complementsvn of a cumulative
+% Compute survival function of a distribution (complement of a cumulative
 % distribution function)
 %
 % SYNTAX
