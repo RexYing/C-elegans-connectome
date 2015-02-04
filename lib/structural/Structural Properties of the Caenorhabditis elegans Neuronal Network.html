@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta name="author" content="Lav R. Varshney" />
+  <title>Structural Properties of the Caenorhabditis elegans Neuronal Network</title>
+  <style type="text/css">
+    body {
+	font-family: verdana, helvetica, serif;
+	color:	#ffffff;
+	background : #6981f1;
+   }
+   h1 {
+      font-size: 1.6em;
+   }
+   h2 {
+      font-size: 1.2em;
+   }
+   p {
+      font-size: 1em;
+   }
+   h3 {
+      font-size: 1.1em;
+   }
+   h4 {
+	font-size: 0.9em;
+	text-decoration: none;
+	color:	#ffffff;
+   }
+   h5 {
+	font-size: 0.95em;
+	text-decoration: none;
+   }
+   h6 {
+	font-size: 0.6em;
+	text-decoration: none;
+   }
+  </style>
+</head>
+
+<body>
+
+<h1>Structural Properties of the <i>Caenorhabditis elegans</i> Neuronal Network</h1>
+<h2>Lav R. Varshney, Beth L. Chen, Eric Paniagua, David H. Hall, and Dmitri B. Chklovskii</h2>
+
+<h3>Abstract</h3>
+<p>
+Despite recent interest in reconstructing neuronal networks, complete wiring diagrams on the level of 
+individual synapses remain scarce and the insights into function they can provide remain unclear. 
+Even for <i>Caenorhabditis elegans</i>, whose neuronal network is relatively small and stereotypical 
+from animal to animal, published wiring diagrams are neither accurate nor complete and self-consistent. 
+Using materials from White <i>et al.</i> and new electron micrographs we assemble whole, self-consistent 
+gap junction and chemical synapse networks of hermaphrodite <i>C. elegans</i>. We propose a method to 
+visualize the wiring diagram, which reflects network signal flow. We calculate statistical and topological 
+properties of the network, such as degree distributions, synaptic multiplicities, and small-world properties, 
+that help in understanding network signal propagation. We identify neurons that may play central roles in 
+information processing, and network motifs that could serve as functional modules of the network. We explore 
+propagation of neuronal activity in response to sensory or artificial stimulation using linear systems theory 
+and find several activity patterns that could serve as substrates of previously described behaviors. Finally, 
+we analyze the interaction between the gap junction and the chemical synapse networks. Since several statistical 
+properties of the <i>C. elegans</i> network, such as multiplicity and motif distributions are similar to 
+those found in mammalian neocortex, they likely point to general principles of neuronal networks. The wiring 
+diagram reported here can help in understanding the mechanistic basis of behavior by generating predictions 
+about future experiments involving genetic perturbations, laser ablations, or monitoring propagation of neuronal 
+activity in response to stimulation.
+</p>
+
+<h3>Reference</h3>
+<p>
+L. R. Varshney, B. L. Chen, E. Paniagua, D. H. Hall, and D. B. Chklovskii, "Structural
+properties of the <i>Caenorhabditis elegans</i> neuronal network," <i>PLoS Computational Biology</i>,
+vol. 7, no. 2, e1001066, Feb. 2011.  <a href="http://dx.doi.org/10.1371/journal.pcbi.1001066"><img alt="PLoS" src="plos.gif" /></a>
+<a href="http://www.ploscompbiol.org/article/info:doi/10.1371/journal.pcbi.1001066/trackback"><img alt="PLoS" src="plos.gif" /></a>
+</p>
+
+
+<h3>Data</h3>
+<p>
+Here you can find the <i>C. elegans</i> connectivity data.  See also <a href="http://www.wormatlas.org/">WormAtlas</a>.
+</p>
+
+<table border="2">
+<tr><th>C. elegans Connectivity Data</th></tr>
+<tr>
+  <td> Adjacency matrices and neuron labels</td>
+  <td> <a href="ConnOrdered_040903.mat">ConnOrdered_040903.mat</a></td>
+</tr>
+<tr>
+  <td> Neuron class labels</td>
+  <td> <a href="NeuronTypeOrdered_040903.mat">NeuronTypeOrdered_040903.mat</a></td>
+</tr>
+<tr>
+  <td> Chemical synapse adjacency matrix under alternate send_joint quantitation</td>
+  <td> <a href="A_sendjoint.mat">A_sendjoint.mat</a></td>
+</tr>
+</table>
+
+
+<h3>Code</h3>
+<p>
+Here you can find the code to compute several graph functionals and to reproduce figures and tables from the paper.  
+If you use this code in your research and publications, please also put a reference to this paper.  Thank you!
+</p>
+<p>
+These files were developed with <a href="http://www.mathworks.com/products/matlab/">Matlab</a> Version 7.4.0 (R2007a) 
+on Microsoft Windows XP (Version 2002).  Some use the Bioinformatics Toolbox 3.1.
+</p>
+
+<table border="2">
+<tr><th>Data Reading Utilities</th></tr>
+<tr>
+  <td> Data reader </td>
+  <td> general </td>
+  <td> <a href="datareader.m">datareader.m</a></td>
+</tr>
+<tr>
+  <td> Listing of neurons with GABAergic synapses </td>
+  <td> general </td>
+  <td> <a href="GABA.m">GABA.m</a></td>
+</tr>
+<tr><th>Mathematical Utilities</th></tr>
+<tr>
+  <td> Hurwitz zeta function </td>
+  <td> general </td>
+  <td> <a href="Hurwitz_zeta.m">Hurwitz_zeta.m</a></td>
+</tr>
+
+
+<tr><th>Three Layer Architecture</th></tr>
+<tr>
+  <td> Partitioning and visualization of adjacency matrices </td>
+  <td> Figure 1</td>
+  <td> <a href="layers.m">layers.m</a>, <a href="layers_i.m">layers_i.m</a> </td>
+</tr>
+<tr>
+  <td> Total connectivity weight between different categories of neurons </td>
+  <td> Tables S2, S4</td>
+  <td> <a href="layerconn.m">layerconn.m</a></td>
+</tr>
+
+<tr><th>Visualization</th></tr>
+<tr>
+  <td> Visualization of C. elegans wiring diagram </td>
+  <td> Figure 2 </td>
+  <td> <a href="visualize.m">visualize.m</a></td>
+</tr>
+
+<tr><th>Connected Components</th></tr>
+<tr>
+  <td> Connected components of an undirected graph (gap junction)</td>
+  <td> Table S1</td>
+  <td> <a href="conncomp_gap.m">conncomp_gap.m</a></td>
+</tr>
+<tr>
+  <td> Connected components of a directed graph (chemical)</td>
+  <td> Table S5</td>
+  <td> <a href="conncomp_chem.m">conncomp_chem.m</a></td>
+</tr>
+<tr>
+  <td> Connected components of combined network</td>
+  <td> </td>
+  <td> <a href="conncomp_both.m">conncomp_both.m</a></td>
+</tr>
+
+
+<tr><th>Degree Distribution</th></tr>
+<tr>
+  <td> Degree distribution of an undirected graph (gap junction) </td>
+  <td> Figure 3(a)</td>
+  <td> <a href="degDist_gap.m">degDist_gap.m</a></td>
+</tr>
+<tr>
+  <td> Degree distribution of a directed graph (chemical) </td>
+  <td> Figures 6(a), 6(b), 6(c)</td>
+  <td> <a href="degDist_chem.m">degDist_chem.m</a></td>
+</tr>
+<tr>
+  <td> Correlations among degree sequences </td>
+  <td> </td>
+  <td> <a href="degDistCorr.m">degDistCorr.m</a></td>
+</tr>
+<tr>
+  <td> Degree distribution of combined network </td>
+  <td> Figure S4</td>
+  <td> <a href="degDist_both.m">degDist_both.m</a></td>
+</tr>
+
+<tr><th>Multiplicity Distribution</th></tr>
+<tr>
+  <td> Multiplicity distribution of an undirected graph (gap junction) </td>
+  <td> Figure 3(b)</td>
+  <td> <a href="multDist_gap.m">multDist_gap.m</a></td>
+</tr>
+<tr>
+  <td> Multiplicity distribution of a directed graph (chemical) </td>
+  <td> Figure 6(d)</td>
+  <td> <a href="multDist_chem.m">multDist_chem.m</a></td>
+</tr>
+
+<tr><th>Number Distribution</th></tr>
+<tr>
+  <td> Number distribution of an undirected graph (gap junction) </td>
+  <td> Figure 3(c)</td>
+  <td> <a href="numDist_gap.m">numDist_gap.m</a></td>
+</tr>
+<tr>
+  <td> Number distribution of a directed graph (chemical) </td>
+  <td> Figures 6(e), 6(f)</td>
+  <td> <a href="numDist_chem.m">numDist_chem.m</a></td>
+</tr>
+
+
+<tr><th>Small World Characteristics</th></tr>
+<tr>
+  <td> Geodesic distance distribution of an undirected graph (gap junction) </td>
+  <td> Figure S1(a)</td>
+  <td> <a href="geodistDist_gap.m">geodistDist_gap.m</a></td>
+</tr>
+<tr>
+  <td> Geodesic distance distribution of a directed graph (chemical) </td>
+  <td> Figure S1(b)</td>
+  <td> <a href="geodistDist_chem.m">geodistDist_chem.m</a></td>
+</tr>
+<tr>
+  <td> Geodesic distance distribution of combined network </td>
+  <td> Figure S1(c)</td>
+  <td> <a href="geodistDist_both.m">geodistDist_both.m</a></td>
+</tr>
+<tr>
+  <td> Closeness centrality of an undirected graph (gap junction) </td>
+  <td> </td>
+  <td> <a href="closenesscentrality_gap.m">closenesscentrality_gap.m</a></td>
+</tr>
+<tr>
+  <td> Closeness centrality of a directed graph (chemical) </td>
+  <td> </td>
+  <td> <a href="closenesscentrality_chem.m">closenesscentrality_chem.m</a></td>
+</tr>
+<tr>
+  <td> Closeness centrality of combined network </td>
+  <td> </td>
+  <td> <a href="closenesscentrality_both.m">closenesscentrality_both.m</a></td>
+</tr>
+<tr>
+  <td> Characteristic path length of an undirected graph (gap junction) </td>
+  <td> Table S3</td>
+  <td> <a href="pathlength_gap.m">pathlength_gap.m</a></td>
+</tr>
+<tr>
+  <td> Characteristic path length of a directed graph (chemical) </td>
+  <td> </td>
+  <td> <a href="pathlength_chem.m">pathlength_chem.m</a></td>
+</tr>
+<tr>
+  <td> Characteristic path length of combined network </td>
+  <td> </td>
+  <td> <a href="pathlength_both.m">pathlength_both.m</a></td>
+</tr>
+<tr>
+  <td> Clustering coefficient of an undirected graph (gap junction) </td>
+  <td> Table S3</td>
+  <td> <a href="clustcoef_gap.m">clustcoef_gap.m</a></td>
+</tr>
+<tr>
+  <td> Clustering coefficient of a directed graph (chemical) </td>
+  <td> </td>
+  <td> <a href="clustcoef_chem.m">clustcoef_chem.m</a></td>
+</tr>
+<tr>
+  <td> Clustering coefficient of combined network </td>
+  <td> </td>
+  <td> <a href="clustcoef_both.m">clustcoef_both.m</a></td>
+</tr>
+
+<tr><th>Linear Systems Analysis</th></tr>
+<tr>
+  <td> Spectral properties for gap junction network </td>
+  <td> Figures 4, S2, S3</td>
+  <td> <a href="LaplacianSpec_gap.m">LaplacianSpec_gap.m</a></td>
+</tr>
+<tr>
+  <td> Spectral properties for combined network </td>
+  <td> Figure 8</td>
+  <td> <a href="Spec_both.m">Spec_both.m</a></td>
+</tr>
+
+
+<tr><th>Motifs</th></tr>
+<tr>
+  <td> Doublet counts of a directed network (chemical) </td>
+  <td> Figure 7(a)</td>
+  <td> <a href="doubCount_chem.m">doubCount_chem.m</a></td>
+</tr>
+<tr>
+  <td> Triplet counts of an undirected network (gap junction) </td>
+  <td> Figure 5(a)</td>
+  <td> <a href="tripCount_gap.m">tripCount_gap.m</a></td>
+</tr>
+<tr>
+  <td> Triplet counts of a directed network (chemical) </td>
+  <td> Figure 7(b)</td>
+  <td> <a href="tripCount_chem.m">tripCount_chem.m</a></td>
+</tr>
+<tr>
+  <td> Conditional doublet counts of a directed network given an undirected network (chemical given gap junction) </td>
+  <td> Figure 9(a)</td>
+  <td> <a href="doubCount_joint.m">doubCount_joint.m</a></td>
+</tr>
+<tr>
+  <td> Conditional triplet counts of chemical network given gap junction network</td>
+  <td> Figure 9(b)</td>
+  <td> <a href="tripCount_joint.m">tripCount_joint.m</a>, <a href="loopchoose.m">loopchoose.m</a></td>
+</tr>
+
+<tr><th>Robustness</th></tr>
+<tr>
+  <td> Characteristic path length vitality of gap junction network </td>
+  <td> </td>
+  <td> <a href="pathlengthVitality_gap.m">pathlengthVitality_gap.m</a></td>
+</tr>
+<tr>
+  <td> Robustness characterization of gap junction network </td>
+  <td> Table S6</td>
+  <td> <a href="robustness_gap.m">robustness_gap.m</a></td>
+</tr>
+<tr>
+  <td> Robustness characterization of chemical network </td>
+  <td> Table S7</td>
+  <td> <a href="robustness_chem.m">robustness_chem.m</a></td>
+</tr>
+<tr>
+  <td> Robustness characterization of linear systems analysis for combined network </td>
+  <td> Figure 10</td>
+  <td> <a href="spectral_both.m">spectral_both.m</a></td>
+</tr>
+</table>
+
+
+<h3>Links</h3>
+<ul>
+  <li> <a href="http://mit.edu/lrv/www">Lav R. Varshney's homepage</a> </li>
+  <li> <a href="http://neuroscience.aecom.yu.edu/faculty/primary_faculty_pages/hall.html">David H. Hall's homepage</a> </li>
+  <li> <a href="http://research.janelia.org/Chklovskii/">Chklovskii Lab page</a> </li>
+</ul>
+
+<h6>Last Updated 2011</h6>
+
+<p>
+<a href="http://validator.w3.org/check?uri=referer">
+<img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" height="31" width="88" />
+</a>
+</p>
+
+</body>
+</html>
