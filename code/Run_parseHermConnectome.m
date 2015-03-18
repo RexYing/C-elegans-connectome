@@ -80,11 +80,11 @@ for iGap = 1: size(gapJunctionIndices, 1)
     nodeListGap1(iGap) = iNodeLabel(gapJunctionIndices(iGap));
     nodeListGap2(iGap) = iNodeLabel(gapJunctionIndices(iGap) + nJunction);
 end
-adjHermGapJunctionSparse = sparse(nodeListGap1, nodeListGap2, double(weightArray(gapJunctionIndices)) );
-degreeSymm = norm( adjHermGapJunctionSparse - adjHermGapJunctionSparse', 'fro');       % measure for non-symmetry 
+AHermGap = sparse(nodeListGap1, nodeListGap2, double(weightArray(gapJunctionIndices)) );
+degreeSymm = norm( AHermGap - AHermGap', 'fro');       % measure for non-symmetry 
 
 figure(figureCount); figureCount = figureCount + 1;
-spy(adjHermGapJunctionSparse);
+spy(AHermGap);
 title('Adjacency matrix for Gap Junctions');
 
 
@@ -94,9 +94,9 @@ title('Adjacency matrix for Gap Junctions');
 %
 
 % electric junction graph
-graphEj = biograph(adjHermGapJunctionSparse, nodeLabel);
-adjHermGapJunctionUnweighted = (adjHermGapJunctionSparse > 0);
-graphEjUnweighted = biograph(adjHermGapJunctionUnweighted, nodeLabel);
+graphEj = biograph(AHermGap, nodeLabel);
+AHermGapUnweighted = (AHermGap > 0);
+graphEjUnweighted = biograph(AHermGapUnweighted, nodeLabel);
 % view graph (slow)
 % view(graphEj);
 
@@ -123,7 +123,7 @@ ylabel('Number of Paths');
 %jaccardGap = jaccardcoefficientall(adjHermGapJunctionSparse); %slow
 
 % Cluster Coefficient
-clusterCoeffGap = clustercoeffs(adjHermGapJunctionSparse);
+clusterCoeffGap = clustercoeffs(AHermGap);
 
 
 
@@ -148,13 +148,13 @@ for iChem = 1: size(chemJunctionIndices, 2)
         otherwise
     end
 end
-adjHermChemJunctionSparse = sparse(nodeListChem1, nodeListChem2, double(weightArray(chemJunctionIndices)) );
+AHermChem = sparse(nodeListChem1, nodeListChem2, double(weightArray(chemJunctionIndices)) );
 
 % measure for non-symmetry
-degreeSymm = norm( adjHermChemJunctionSparse - adjHermChemJunctionSparse', 'fro');       
+degreeSymm = norm( AHermChem - AHermChem', 'fro');       
 fprintf('Degree of non-symmetry for chemical junctions: %d\n', degreeSymm);
 
 figure(figureCount); figureCount = figureCount + 1;
-spy(adjHermChemJunctionSparse);
+spy(AHermChem);
 title('Adjacency Matrix for Chemical Junctions');
 

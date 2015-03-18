@@ -43,7 +43,7 @@ figureCount = 1;
 %     partner.  Neuron 2 is just one of these post-synaptic neurons. 
 %     
 %     In White et al, 1986, these polyadic synaptic connections 
-%     were denoted  by “m” in the tables of Appendix 1);
+%     were denoted  by “m�?in the tables of Appendix 1);
 %
 % R:  Receive or input 
 %     (Neuron 1 is post-synaptic to Neuron 2); 
@@ -58,7 +58,7 @@ figureCount = 1;
 %
 
 
-fileName = '../Data/Herm_Data/NeuronConnect.csv';
+fileName = 'Data/Herm_Data/NeuronConnect.csv';
 neuronFileId = fopen(fileName);
 
 if (neuronFileId < 0)

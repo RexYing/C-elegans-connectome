@@ -1,5 +1,4 @@
 %% Compute hub score for each neuron
-
 w = 0.5;
 n = length(AGap(1, :));
 A2 = zeros(size(AGap));

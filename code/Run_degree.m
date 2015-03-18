@@ -73,3 +73,9 @@ ylabel('log(Percentage)');
 [chemInDegree, chemInDegreeIndices] = sort(chemInDegree, 'descend');
 [chemOutDegree, chemOutDegreeIndices] = sort(chemOutDegree, 'descend');
 
+%% Embedding of gap, chem-in, chem-out
+figure
+scatter3(gapDegree, chemInDegree(gapDegreeIndices), chemOutDegree(gapDegreeIndices), '.');
+xlabel('gap degree');
+ylabel('chem in-degree');
+zlabel('chem out-degree');

@@ -108,7 +108,8 @@ switch spectral_range          % select an embedding subspace
   
   case 'large_spread' 
      k    = input( ' Enter spectral step size [1,9]  = ' ); 
-     inds = (N-Lzeros) - 0:k:3*k;     
+     inds = (0:2) * k;
+     inds = (N-Lzeros) - inds;     
             % more spread at the low-end of the spectrum 
      dispMsg = sprintf( '\n Large spread within clusters \n ' );
   
