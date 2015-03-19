@@ -1,6 +1,20 @@
-function A=AdjEleg(rawData)
+function [A,names,scores,HUBS]=AdjEleg(rawData)
+%
+%PLAN: include input excludedNodes as cell array of strings for neurons to
+%take out of raw data before making adjacency matrix
+%
 %input is just the connectome excel sheet imported as one big cell array
-%output is the adjacency matrix, weighted by # of connections 
+%outputs:
+%   A: adjacency matrix, weighted by # of connections
+%   scores: number of connections for each index
+%   names of neurons indexed in scores
+%   index 'i' in this cell array contains an array of indices for 'names'
+%   that identifies which neurons are connected to the 'i'th neuron in
+%   'names'.
+%   HUBS: struct of each hub identified by HubAnalysis.m. Each class
+%   contains list of cells it connects to, the weights, and # of total
+%   connections. struct also has a sub-adjancy matrix that is H x N for H
+%   hubs.
 %
 %v1.0 | Justin - 1/28/15
 rawData=rawData(2:end,:);%clip data labels
@@ -13,7 +27,7 @@ names=unique([rawData(:,1);rawData(:,2)]);%list of cell names. draw from both
 %be symmetrically indexed (not symetrically populated though- directed).
 n2Inds=nan(size(rawData,1),1);%keeps index of every col 2 cell for 'names'
 for i=1:length(n2Inds)
-    isConn=strfind(names,rawData{i,2});
+    isConn=strfind(names,rawData{i,2});%
     indsConn=cell2mat(cellfun(@sum,isConn,'UniformOutput',false));
     indsConn=(indsConn==1); %somtimes you get >1 because internal matches
     indConn=sum(indsConn.*[1:length(indsConn)]');%turn logical array to 
@@ -22,6 +36,8 @@ for i=1:length(n2Inds)
 end
 
 A=zeros(length(names));
+ScoresByName=cell(length(names),2);
+cnnxnInds=cell(length(names),1);
 %loop through each cell type and record connected cells into A
 for i=1:length(names)
     %find indices for current cell
@@ -32,3 +48,8 @@ for i=1:length(names)
     numCnxns=cell2mat(rawData(indsCurr,4));%number of connections @ same indices
     A(i,n2Inds(indsCurr))=numCnxns;%populate by back-indexing connected cell 
 end
+
+scores=sum(A,2);
+
+HUBS=HubAnalysis(A,names,scores);
+
