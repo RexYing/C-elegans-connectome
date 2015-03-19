@@ -1,16 +1,15 @@
 %% Compute hub score for each neuron
-
 w = 0.5;
-n = length(AGap(1, :));
-A2 = zeros(size(AGap));
+n = length(AHermGap(1, :));
+A2 = zeros(size(AHermGap));
 for i = 1: n
     for j = 1: n
-        r = AGap(i, :);
-        c = AGap(:, j)';
+        r = AHermGap(i, :);
+        c = AHermGap(:, j)';
         secConn = sum(min([r; c], [], 1));
-        A2(i, j) = AGap(i, j) + secConn;
+        A2(i, j) = AHermGap(i, j) + secConn;
     end
 end
 
 deg = sum(A2);
-plot(deg)
+plot(sort(deg))
