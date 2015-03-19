@@ -1,9 +1,13 @@
-function [A,names,scores,HUBS]=AdjEleg(rawData)
+function [A,names,scores,HUBS]=AdjEleg(rawData,mode)
 %
 %PLAN: include input excludedNodes as cell array of strings for neurons to
 %take out of raw data before making adjacency matrix
 %
-%input is just the connectome excel sheet imported as one big cell array
+%inputs:
+%   rawData is just the connectome excel sheet imported as one big cell array
+%   mode is 'primary' or 'secondary' depending on how deep the adjacency
+%   matrix should go
+%
 %outputs:
 %   A: adjacency matrix, weighted by # of connections
 %   scores: number of connections for each index
@@ -49,7 +53,6 @@ for i=1:length(names)
     A(i,n2Inds(indsCurr))=numCnxns;%populate by back-indexing connected cell 
 end
 
-scores=sum(A,2);
-
+scores=CalcDegrees(A,mode);%node degrees
 HUBS=HubAnalysis(A,names,scores);
 
