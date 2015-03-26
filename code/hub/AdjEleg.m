@@ -1,12 +1,19 @@
-function [A,names,scores,HUBS]=AdjEleg(rawData,mode)
+function [A,names,scores,HUBS]=AdjEleg(varargin)
 %
 %PLAN: include input excludedNodes as cell array of strings for neurons to
 %take out of raw data before making adjacency matrix
 %
 %inputs:
-%   rawData is just the connectome excel sheet imported as one big cell array
-%   mode is 'primary' or 'secondary' depending on how deep the adjacency
-%   matrix should go
+%   arg 1: rawData is just the connectome excel sheet imported as one big cell array
+%
+%   arg 2: mode is 'primary' or 'secondary' depending on how deep the adjacency
+%          matrix should go
+%
+%   arg 3: cellsToExclude is a cell array of cell names to be
+%          excluded from rawData when making A
+%
+%   arg 4: makeFigs is a boolean indicating whether or not to make
+%          hub-related figures in call to HubAnalysis
 %
 %outputs:
 %   A: adjacency matrix, weighted by # of connections
@@ -21,12 +28,30 @@ function [A,names,scores,HUBS]=AdjEleg(rawData,mode)
 %   hubs.
 %
 %v1.0 | Justin - 1/28/15
-rawData=rawData(2:end,:);%clip data labels
+%% read in vars
+mode='primary'; cellsToExclude={}; makeFigs=true;%default settings
+
+varNames={'rawData','mode','cellsToExclude','makeFigs'};
+for varDex=1:length(varargin)
+    eval(sprintf('%s=varargin{varDex};',varNames{varDex}))
+end
+
+%% prepare data for processing into A
+if strcmp(rawData{1,1},'Neuron 1')
+    rawData=rawData(2:end,:);%clip data labels
+end
+
 rawData(:,1:2)=upper(rawData(:,1:2));%all upper case
+
+if ~isempty(cellsToExclude)
+    rawData=ClipNodes(rawData,cellsToExclude);
+end
+
 names=unique([rawData(:,1);rawData(:,2)]);%list of cell names. draw from both 
 %columns because of some peripheral cells (e.g. muscle cells) that only RECEIVE
 %input
 
+%% make A
 %for each connected neuron in col2, find its index in 'names' so that A can
 %be symmetrically indexed (not symetrically populated though- directed).
 n2Inds=nan(size(rawData,1),1);%keeps index of every col 2 cell for 'names'
@@ -53,6 +78,7 @@ for i=1:length(names)
     A(i,n2Inds(indsCurr))=numCnxns;%populate by back-indexing connected cell 
 end
 
+%% extra outputs
 scores=CalcDegrees(A,mode);%node degrees
-HUBS=HubAnalysis(A,names,scores);
+HUBS=HubAnalysis(A,names,scores,makeFigs);
 

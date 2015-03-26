@@ -1,5 +1,10 @@
 function [ColorMat,ColorMap]=HeatMapGen(data,maxVal)
-
+%ColorMap is the 64x3 color matrix. ColorMat projects ColorMap onto the
+%dimensions of input data.
+%
+%Justin O'Hare
+%ohare@neuro.duke.edu
+data(isnan(data))=0;
 if size(data,1)<size(data,2)
     data=data';
 end
@@ -13,7 +18,7 @@ mapLength=mapLength*(max(data)/maxVal);
 I=rankedInds(data);
 for i=1:length(I)
     colorInd=floor((I(i)/length(data))*mapLength);
-    if colorInd==0, colorInd=1;end
+    if colorInd<1 || isnan(colorInd), colorInd=1;end
     ColorMat(i,:)=ColorMap(colorInd,:);
 end
 
