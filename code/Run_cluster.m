@@ -12,7 +12,7 @@
 EjIsolatedIndices = zeros(nNeuron, 1);
 index = 1;
 for iNeuron = 1: nNeuron
-    if nnz(adjHermGapJunctionSparse(iNeuron, :)) == 0
+    if nnz(AHermGap(iNeuron, :)) == 0
         EjIsolatedIndices(index) = iNeuron;
         index = index + 1;
     end
@@ -23,7 +23,7 @@ EjIsolatedIndices = EjIsolatedIndices(EjIsolatedIndices > 0);
 % The name of the neuron i in the adjMat is nodeLabel(connNeurons(i)) 
 connNeurons = 1: nNeuron;
 connNeurons = setdiff(connNeurons, EjIsolatedIndices);
-connEjAdjMat = adjHermGapJunctionSparse(connNeurons, connNeurons);
+connEjAdjMat = AHermGap(connNeurons, connNeurons);
 
 %[V, D] = eigs(connEjAdjMat);
 [nComponent, components] = graphconncomp(connEjAdjMat);

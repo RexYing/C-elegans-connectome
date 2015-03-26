@@ -39,7 +39,7 @@ title('Adjacency Matrix')
 
 % display connectivity
 % *** IT TAKES A LOT OF TIME, COMMENT OUT AFTER YOU SEE IT ***
-figure(2)
-gh = biograph(A,nodeLabel);
-view(gh)
+% figure(2)
+% gh = biograph(A,nodeLabel);
+% view(gh)
 

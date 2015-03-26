@@ -43,7 +43,7 @@ xlabel( dispMsg )
 
 
 % ... processing the Agap matrix, which is symmetric 
-
+AGap = AChem + AChem' + AGap;
 N       = size( AGap, 1 ) ; 
 dispMsg = sprintf( ' Number of neurons included = %d ', N ); 
 disp( dispMsg ) ;           % need to study the near decoupling 
