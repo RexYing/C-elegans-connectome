@@ -13,4 +13,20 @@ xx = column{1, :};
 column = rawData(2);
 yy = column{1, :};
 
-scatter(xx, yy, '.');
+%scatter(xx, yy, '.');
+
+%% match node labels
+neuron_types;
+load 'nodelabel279.mat'
+fileName = 'celegans277labels.csv';
+fileId = fopen(fileName);
+rawData = textscan(fileId, '%s', 'Delimiter', ',', 'HeaderLines', 0);
+label277 = rawData{1};
+strfind(nodeLabel, 'ADAL');
+
+%% plot
+scatter(xx(motorIdx), yy(motorIdx), 'm.');
+scatter(xx(sensoryIdx), yy(sensoryIdx), 'g.');
+scatter(xx(interIdx), yy(interIdx), 'b.');
+axis equal
+title ('The 2D embedding of neuron positions');

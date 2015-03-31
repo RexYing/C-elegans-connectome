@@ -20,6 +20,7 @@ close all
 % ... load data matrices A
 
 load( 'herm_gap_adj.mat' );  
+load( 'nodelabel279.mat' );
                                   
 % ... display loaded adjacency matrices 
 
@@ -43,7 +44,7 @@ xlabel( dispMsg )
 
 
 % ... processing the Agap matrix, which is symmetric 
-AGap = AChem + AChem' + AGap;
+AGap = 0.5 * (AChem + AChem') + AGap;
 N       = size( AGap, 1 ) ; 
 dispMsg = sprintf( ' Number of neurons included = %d ', N ); 
 disp( dispMsg ) ;           % need to study the near decoupling 
@@ -91,7 +92,7 @@ colorbar
 %  ... spectral embedding of the graph 
 % ------------------------------------------------------------------
 
-spectral_range = 'large_spread'; 
+spectral_range = 'small_spread'; 
 
 switch spectral_range          % select an embedding subspace
     case 'small_spread' 
@@ -193,6 +194,24 @@ dispMsg = sprintf( ' You may rotate 3D Figures \n '  );
 disp( dispMsg ) 
 
 return 
+
+%% color neurons with types
+neuron_types;
+h = figure ; 
+
+hold on 
+plot3( X(motorIdx,1), X(motorIdx,2), X(motorIdx,3), 'm.');
+plot3( X(sensoryIdx,1), X(sensoryIdx,2), X(sensoryIdx,3), 'g.');
+plot3( X(interIdx,1), X(interIdx,2), X(interIdx,3), 'b.');
+xlabel( 'V 1') 
+ylabel( 'V 2' )
+zlabel( 'V 3' )
+%gplot3D( AGap, X(:,1:3) );
+title('colored 3D spectral embedding of Agap');
+grid on 
+box on 
+rotate3d 
+
 
 %-------------------------------------
 % Rex Ying, Xiaobai Sun
