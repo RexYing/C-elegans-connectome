@@ -45,12 +45,15 @@ xlabel( dispMsg )
 
 % ... processing the Agap matrix, which is symmetric 
 AGap = 0.5 * (AChem + AChem') + AGap;
+
 N       = size( AGap, 1 ) ; 
 dispMsg = sprintf( ' Number of neurons included = %d ', N ); 
 disp( dispMsg ) ;           % need to study the near decoupling 
                             
 D    = sum( AGap, 2);       %  get the node degree distribution                 
-LGap = diag(D) - AGap;      %  form the Laplacian matrix  
+%LGap = diag(D) - AGap;      %  form the Laplacian matrix  
+% normalized version
+LGap = eye(N) - diag(1 ./ D) * AGap * diag(D);
 
 [U, E] = eig( full( LGap ) );  %  get the eigenvalue decomposition 
 E  = diag(E);                  %  change the storage format to vector 
@@ -211,7 +214,8 @@ title('colored 3D spectral embedding of Agap');
 grid on 
 box on 
 rotate3d 
-
+d = 0.01;
+%text(X(:, 1)+d, X(:, 2)+d, X(:, 3) + d, nodeLabel);
 
 %-------------------------------------
 % Rex Ying, Xiaobai Sun
