@@ -22,11 +22,16 @@ fileName = 'celegans277labels.csv';
 fileId = fopen(fileName);
 rawData = textscan(fileId, '%s', 'Delimiter', ',', 'HeaderLines', 0);
 label277 = rawData{1};
-strfind(nodeLabel, 'ADAL');
 
 %% plot
+figure
 scatter(xx(motorIdx), yy(motorIdx), 'm.');
 scatter(xx(sensoryIdx), yy(sensoryIdx), 'g.');
 scatter(xx(interIdx), yy(interIdx), 'b.');
+d = 0.01;
+text(xx+d, yy + d, label277);
 axis equal
 title ('The 2D embedding of neuron positions');
+
+
+

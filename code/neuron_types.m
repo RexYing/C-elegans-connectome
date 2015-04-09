@@ -11,6 +11,8 @@ neuronTypes = [ ...
     ones(1, 13) * 3
     ];
 
+neuronTypes([54,55,57]) = [];
+
 interIdx = [];
 sensoryIdx = [];
 motorIdx = [];

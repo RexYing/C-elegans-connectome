@@ -12,15 +12,17 @@
 % 
 
 close all 
-clear all 
+% clear all 
 
 figureCount = 1;  
 
 
 % .. load data by parse_gapMatrix_hermC.m 
 
-load( 'AgapCherm.mat' ) ; % contains AgapChermSparse, nodeLabel  
-
+%load( 'AgapCherm.mat' ) ; % contains AgapChermSparse, nodeLabel  
+% load('herm_adj_remove_hub.mat');
+load('herm_adj');
+A = (AGap + AChem);
 
 %% Use Bioinformatics Toolbox for graph computations
 %
@@ -31,7 +33,7 @@ load( 'AgapCherm.mat' ) ; % contains AgapChermSparse, nodeLabel
 
 % Ggap   = biograph( AgapChermSparse, nodeLabel );
 
-Agap01 = (AgapHermSparse > 0);       % binary-valued adjacency matrix 
+Agap01 = (A > 0);       % binary-valued adjacency matrix 
 Ggap01 = biograph(Agap01, nodeLabel); % graph with unweighted edges 
 
 % view graph                          % slow 
@@ -41,7 +43,7 @@ Ggap01 = biograph(Agap01, nodeLabel); % graph with unweighted edges
 
 % ... all shortest paths : unweighted 
 
-Ggap01pathlengths = allshortestpaths( Ggap01 );
+Ggap01pathlengths = graphallshortestpaths( Agap01 );
 
 
 
@@ -70,12 +72,12 @@ axis equal
 colorbar 
 axis off 
 title( 'The path length matrix' ); 
-
+colormap gray
 
 figure( figureCount ); 
 figureCount = figureCount + 1;
 
-hist( Ggap01pathEffective, Ggap01pathMax ) ; 
+hist( Ggap01pathEffective, Ggap01pathMax +1) ; 
 title('Histogram of Path Length for Herm Gap Junction Network');
 xlabel('Path Length');
 ylabel('Number of Paths per Bin'); 

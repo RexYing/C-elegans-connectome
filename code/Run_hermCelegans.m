@@ -20,40 +20,41 @@ close all
 % ... load data matrices A
 
 load( 'herm_gap_adj.mat' );  
+% load('herm_adj_remove_hub.mat');
 load( 'nodelabel279.mat' );
                                   
 % ... display loaded adjacency matrices 
 
-figure 
-spy( AChem )
-title(' Adjacency matrix named Achem '  )  
-
-dsymm = norm( AChem-AChem', 'fro');     % a measure for non-symmetry 
-dispMsg = sprintf( ' non-symmetry component in F-norm = %g ', dsymm ); 
-xlabel( dispMsg ) 
-
-figure
-spy(AGap)
-title( ' Adjacency matrix named Agap '  ) 
-
-dsymm = norm( AGap-AGap', 'fro');       % measure for non-symmetry 
-dispMsg = sprintf( ' non-symmetry component in F-norm = %g ', dsymm ); 
-xlabel( dispMsg ) 
+% figure 
+% spy( AChem )
+% title(' Adjacency matrix named Achem '  )  
+% 
+% dsymm = norm( AChem-AChem', 'fro');     % a measure for non-symmetry 
+% dispMsg = sprintf( ' non-symmetry component in F-norm = %g ', dsymm ); 
+% xlabel( dispMsg ) 
+% 
+% figure
+% spy(AGap)
+% title( ' Adjacency matrix named Agap '  ) 
+% 
+% dsymm = norm( AGap-AGap', 'fro');       % measure for non-symmetry 
+% dispMsg = sprintf( ' non-symmetry component in F-norm = %g ', dsymm ); 
+% xlabel( dispMsg ) 
 
 
 
 
 % ... processing the Agap matrix, which is symmetric 
-AGap = 0.5 * (AChem + AChem') + AGap;
+A = 0.5 * (AChem + AChem') + AGap;
 
-N       = size( AGap, 1 ) ; 
+N       = size( A, 1 ) ; 
 dispMsg = sprintf( ' Number of neurons included = %d ', N ); 
 disp( dispMsg ) ;           % need to study the near decoupling 
                             
-D    = sum( AGap, 2);       %  get the node degree distribution                 
-%LGap = diag(D) - AGap;      %  form the Laplacian matrix  
+D    = sum( A, 2);       %  get the node degree distribution                 
+LGap = diag(D) - A;      %  form the Laplacian matrix  
 % normalized version
-LGap = eye(N) - diag(1 ./ D) * AGap * diag(D);
+LGap = eye(N) - diag(1 ./ D) * A * diag(D);
 
 [U, E] = eig( full( LGap ) );  %  get the eigenvalue decomposition 
 E  = diag(E);                  %  change the storage format to vector 
@@ -160,9 +161,9 @@ title( [ '2D node clustering with', dispMsg ]  );
 figure
 plot( X(:,1), X(:,2), 'm.'); 
 hold on 
-gplot( AGap, X(:,1:2) );
+gplot( A, X(:,1:2) );
 grid on 
-title('2D spectral embedding of Agap'); 
+title('2D spectral embedding of A'); 
 
 
 % ... 3D spectrai embedding  
@@ -187,8 +188,8 @@ h = figure ;
 plot3( X(:,1), X(:,2), X(:,3), 'm.'); 
 xlabel( 'dimension 1') 
 hold on 
-gplot3D( AGap, X(:,1:3) );
-title('3D spectral embedding of Agap');
+gplot3D( A, X(:,1:3) );
+title('3D spectral embedding of A');
 grid on 
 box on 
 rotate3d 
@@ -209,13 +210,26 @@ plot3( X(interIdx,1), X(interIdx,2), X(interIdx,3), 'b.');
 xlabel( 'V 1') 
 ylabel( 'V 2' )
 zlabel( 'V 3' )
-%gplot3D( AGap, X(:,1:3) );
-title('colored 3D spectral embedding of Agap');
+%gplot3D( A, X(:,1:3) );
+title('colored 3D spectral embedding of A');
 grid on 
 box on 
 rotate3d 
 d = 0.01;
-%text(X(:, 1)+d, X(:, 2)+d, X(:, 3) + d, nodeLabel);
+text(X(:, 1)+d, X(:, 2)+d, X(:, 3) + d, nodeLabel);
+
+%% subnetwork
+% minimum klinotaxis circuit
+mkc = {'ASEL', 'ASER', 'AIYL', 'AIYR', 'AIZL', 'AIZR', 'SMBVL', 'SMBVR', 'SMBDL', 'SMBDR'};
+embedSubnetwork(nodeLabel, A, X, mkc);
+
+% touch sensitivity
+touchSen = {'LUA', 'AVB', 'PVC', 'AVA', 'AVD', 'ALM', 'AVM', 'PLML', 'AS'};
+embedSubnetwork(nodeLabel, A, X, touchSen);
+
+% egg laying
+eggLaying = {'HSN', 'PLML', 'VC', 'PVC'};
+embedSubnetwork(nodeLabel, A, X, eggLaying);
 
 %-------------------------------------
 % Rex Ying, Xiaobai Sun
