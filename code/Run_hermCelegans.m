@@ -228,8 +228,8 @@ touchSen = {'LUA', 'AVB', 'PVC', 'AVA', 'AVD', 'ALM', 'AVM', 'PLML', 'AS'};
 embedSubnetwork(nodeLabel, A, X, touchSen);
 
 % egg laying
-eggLaying = {'HSN', 'PLML', 'VC', 'PVC'};
-embedSubnetwork(nodeLabel, A, X, eggLaying);
+%eggLaying = {'HSN', 'PLML', 'VC', 'PVC'};
+%embedSubnetwork(nodeLabel, A, X, eggLaying);
 
 %-------------------------------------
 % Rex Ying, Xiaobai Sun
