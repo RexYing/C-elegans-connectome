@@ -216,7 +216,7 @@ grid on
 box on 
 rotate3d 
 d = 0.01;
-text(X(:, 1)+d, X(:, 2)+d, X(:, 3) + d, nodeLabel);
+%text(X(:, 1)+d, X(:, 2)+d, X(:, 3) + d, nodeLabel);
 
 %% subnetwork
 % minimum klinotaxis circuit
