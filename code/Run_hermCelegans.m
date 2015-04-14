@@ -231,6 +231,13 @@ embedSubnetwork(nodeLabel, A, X, touchSen);
 %eggLaying = {'HSN', 'PLML', 'VC', 'PVC'};
 %embedSubnetwork(nodeLabel, A, X, eggLaying);
 
+% Hubs
+hubs = {'AVA', 'AVB', 'RIA', 'PVC', 'DVC'};
+embedSubnetwork(nodeLabel, A, X, hubs);
+
+% further includes less important but relatively high degree nodes
+sechubs = {'AVA', 'AVB', 'RIA', 'PVC', 'DVC', 'DVA', 'AIY', 'AIZ'};
+embedSubnetwork(nodeLabel, A, X, hubs);
 %-------------------------------------
 % Rex Ying, Xiaobai Sun
 % Department of Computer Science 
