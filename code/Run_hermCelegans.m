@@ -216,7 +216,7 @@ grid on
 box on 
 rotate3d 
 d = 0.01;
-%text(X(:, 1)+d, X(:, 2)+d, X(:, 3) + d, nodeLabel);
+text(X(:, 1)+d, X(:, 2)+d, X(:, 3) + d, nodeLabel);
 
 %% subnetwork
 % minimum klinotaxis circuit
@@ -237,7 +237,9 @@ embedSubnetwork(nodeLabel, A, X, hubs);
 
 % further includes less important but relatively high degree nodes
 sechubs = {'AVA', 'AVB', 'RIA', 'PVC', 'DVC', 'DVA', 'AIY', 'AIZ'};
-embedSubnetwork(nodeLabel, A, X, hubs);
+embedSubnetwork(nodeLabel, A, X, sechubs);
+
+axis off
 %-------------------------------------
 % Rex Ying, Xiaobai Sun
 % Department of Computer Science 
