@@ -236,7 +236,7 @@ hubs = {'AVA', 'AVB', 'RIA', 'PVC', 'DVC'};
 embedSubnetwork(nodeLabel, A, X, hubs);
 
 % further includes less important but relatively high degree nodes
-sechubs = {'AVA', 'AVB', 'RIA', 'PVC', 'DVC', 'DVA', 'AIY', 'AIZ'};
+sechubs = {'AVA', 'AVB', 'RIA', 'PVC', 'DVC', 'DVA', 'AIY', 'AIZ', 'AVD', 'AVE'};
 embedSubnetwork(nodeLabel, A, X, sechubs);
 
 axis off
